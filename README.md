@@ -103,7 +103,7 @@ neurocli ai-diff
 Get answers to programming questions:
 
 ```bash
-neurocli "how do I sort a map in Go?"
+neurocli ask "how do I sort a map in Go?"
 ```
 
 ## 🏗️ Built With
