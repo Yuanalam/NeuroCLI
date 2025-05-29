@@ -53,7 +53,7 @@ NeuroCLI is an AI-powered command line assistant designed to enhance developer p
 
 5. You can now use NeuroCLI from any terminal window. Try it out:
    ```bash
-   neurocli "how do I sort a map in Go?"
+   neurocli ask "how do I sort a map in Go?"
    ```
 
 ### Building from Source
