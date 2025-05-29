@@ -23,11 +23,38 @@ NeuroCLI is an AI-powered command line assistant designed to enhance developer p
 - Go 1.16 or later
 - Git (for version control features)
 
-### Using Go
+### Using Go (Recommended)
 
-```bash
-go install github.com/Ravsalt/neurocli@latest
-```
+1. Ensure you have Go 1.16 or later installed. Check your Go version:
+   ```bash
+   go version
+   ```
+
+2. Install the latest version of NeuroCLI:
+   ```bash
+   go install github.com/Ravsalt/neurocli@latest
+   ```
+
+3. Add Go's bin directory to your PATH if it's not already there:
+   - Linux/macOS: Add this to your `~/.bashrc`, `~/.zshrc`, or equivalent:
+     ```bash
+     export PATH="$PATH:$(go env GOPATH)/bin"
+     ```
+   - Windows: Add `%USERPROFILE%\go\bin` to your system's PATH
+
+4. Verify the installation:
+   ```bash
+   neurocli --version
+   ```
+   Or check the help:
+   ```bash
+   neurocli --help
+   ```
+
+5. You can now use NeuroCLI from any terminal window. Try it out:
+   ```bash
+   neurocli "how do I sort a map in Go?"
+   ```
 
 ### Building from Source
 
@@ -103,12 +130,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👏 Acknowledgments
 
 - [Pollinations AI](https://github.com/pollinations/pollinations) for the free and open source AI API
-- [OpenAI](https://openai.com/) for the AI capabilities
-- All contributors who have helped shape this project
 
 ## 📧 Contact
 
 Raven - [@Ravsalt](https://github.com/Ravsalt)
 
 Project Link: [https://github.com/Ravsalt/neurocli](https://github.com/Ravsalt/neurocli)
->>>>>>> cc418ca (Initial commit: AI-powered command line assistant with git integration)
